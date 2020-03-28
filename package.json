@@ -1,7 +1,7 @@
 {
 	"name": "@apploud/core",
 	"author": "Apploud Digital",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"main": "./dist/apploud.core.common.js",
 	"scripts": {
 		"docs:dev": "vuepress dev docs",
