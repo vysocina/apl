@@ -1,12 +1,12 @@
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
+import {Vue} from 'vue-property-decorator';
+import VueRouter from 'vue-router';
 
-Vue.config.productionTip = false;
+import Dev from './dev.vue';
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
+Vue.use(VueRouter);
+
+const app = new Vue({
+	render: (h) => h(Dev),
 }).$mount('#app');
+
+export default app;
