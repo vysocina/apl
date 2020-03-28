@@ -1,12 +1,12 @@
 import {Vue} from 'vue-property-decorator';
+import VueRouter from 'vue-router';
 
-import App from './App.vue';
+import Dev from './dev.vue';
+
+Vue.use(VueRouter);
 
 const app = new Vue({
-	components: {
-		app: App,
-	},
-	render: (h) => h(App),
+	render: (h) => h(Dev),
 }).$mount('#app');
 
 export default app;

@@ -1,0 +1,15 @@
+$cGreen: #3eaf7c;
+$cWhite: #ffffff;
+$cGreyLight: #f4f5f7;
+$cGreyDarker: #e8ebec;
+$cBlack: #476582;
+
+.code-snippet {
+	margin: 0.85rem 0;
+	overflow: auto;
+	background: $cWhite;
+	padding: 1px;
+}
+
+@import '../../../src/scss/components/layout/Row.scss';
+@import '../../../src/scss/components/layout/Column.scss';

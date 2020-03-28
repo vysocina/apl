@@ -1,0 +1,54 @@
+@import '../../foundation';
+
+.row {
+	justify-content: center;
+	// at rows nejsou nalepené úplně na okraj viewportu
+	padding-left: map_get($grid-column-gutter, tablet-landscape)/2;
+	padding-right: map_get($grid-column-gutter, tablet-landscape)/2;
+	// 1190 2*20 (padding) - 2*5 (column gutter) = 1240
+	max-width: calc(#{$grid-row-width} + #{rem-calc(30)});
+	width: 100%;
+
+	.row {
+		max-width: none;
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&--flex {
+		@include flex-grid-row();
+	}
+
+	&--vertical-center {
+		align-items: center;
+	}
+
+	&--vertical-start {
+		align-items: flex-start;
+	}
+
+	&--vertical-end {
+		align-items: flex-end;
+	}
+
+	&--vertical-reverse {
+		flex-direction: row-reverse;
+	}
+
+	&--horizontal-center {
+		justify-content: center;
+	}
+
+	&--horizontal-start {
+		justify-content: flex-start;
+	}
+
+	&--horizontal-end {
+		justify-content: flex-end;
+	}
+
+	&--horizontal-reverse {
+		flex-direction: column-reverse;
+	}
+}

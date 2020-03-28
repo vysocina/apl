@@ -1,0 +1,71 @@
+@import '../../foundation';
+
+@for $i from 1 through 12 {
+	.column--large-#{$i} {
+		@include flex-grid-column($i, false);
+	}
+
+	.column--large-offset-#{$i} {
+		@include grid-column-offset($i);
+	}
+
+	@include breakpoint(medium down) {
+		.column--medium-#{$i} {
+			@include flex-grid-column($i, false);
+		}
+
+		.column--medium-offset-#{$i} {
+			@include grid-column-offset($i);
+		}
+	}
+
+	@include breakpoint(desktop down) {
+		.column--desktop-#{$i} {
+			@include flex-grid-column($i, false);
+		}
+
+		.column--desktop-offset-#{$i} {
+			@include grid-column-offset($i);
+		}
+	}
+
+	@include breakpoint(tablet down) {
+		.column--tablet-#{$i} {
+			@include flex-grid-column($i, false);
+		}
+
+		.column--tablet-offset-#{$i} {
+			@include grid-column-offset($i);
+		}
+	}
+
+	@include breakpoint(small down) {
+		.column--small-#{$i} {
+			@include flex-grid-column($i, false);
+		}
+
+		.column--small-offset-#{$i} {
+			@include grid-column-offset($i);
+		}
+	}
+
+	@include breakpoint(phone down) {
+		.column--phone-#{$i} {
+			@include flex-grid-column($i, false);
+		}
+
+		.column--phone-offset-#{$i} {
+			@include grid-column-offset($i);
+		}
+	}
+
+	@include breakpoint(tiny down) {
+		.column--tiny-#{$i} {
+			@include flex-grid-column($i, false);
+		}
+
+		.column--tiny-offset-#{$i} {
+			@include grid-column-offset($i);
+		}
+	}
+}

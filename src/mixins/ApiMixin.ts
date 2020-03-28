@@ -109,20 +109,31 @@ export default class ApiMixin extends Mixins(DebugMixin) {
 
 		const validations: boolean[] = Object.keys(this.$refs)
 			.filter((fieldName: string) => {
-				// keep every ref which has `refName` in its name
+				// keep every ref containing `refName` in its key
 				return fieldName.indexOf(refName) > -1;
 			})
 			.map((fieldName: string) => {
-				// get the validation method of filtered fields
-				const validate = (this.$refs[fieldName] as FieldRef).validate;
-
-				// and run it to get output of validation
-				return validate ? validate() : true;
+				// validate each field
+				return this.validateField(fieldName);
 			});
 
 		// returns true only when every input is valid
 		const state: boolean = validations.every((isValid: boolean) => isValid);
 		this.debugLog({c: 'ApiMixin', m: `validateForm stop, with state: ${state}`});
+		return state;
+	}
+
+	/**
+	 * @param fieldName: string
+	 * @returns boolean
+	 */
+	public validateField(fieldName: string): boolean {
+		const ref = this.$refs[fieldName] as FieldRef;
+		// @ts-ignore
+		const validate = ref.validate;
+		const state = validate ? validate() : true;
+
+		this.debugLog({c: 'ApiMixin', m: `validateField ${fieldName}, with state ${state}`});
 		return state;
 	}
 
