@@ -56,17 +56,17 @@ To use `<v-column></v-column>` properly, you should check [Row](/layout/row) com
 
 ## Props
 
-| Name    | Type                   | Default value     | Deacription                                    |
-|:--------|:-----------------------|:------------------|:-----------------------------------------------|
-| large       | `number | number[]`    | `12`          | for every breakpoint                           |
-| medium      | `number | number[]`    | `null`        | 1501px - 1800px                                |
-| desktop     | `number | number[]`    | `null`        | 1201px - 1500px                                |
-| tablet      | `number | number[]`    | `null`        | 901px - 1200px                                 |
-| small       | `number | number[]`    | `null`        | 601px - 900px                                  |
-| phone       | `number | number[]`    | `null`        | 461px - 600px                                  |
-| tiny        | `number | number[]`    | `null`        | 0px - 460px                                    |
-| breakpoints | `Breakpoint | null`    | `null`        | when you need a custom breakpoint              |
-| classes     | `HTMLClass | null`     | `null`        | read more at [@Prop() classes;](/core/classes) |
+| Name    | Type                   | Default value     | Deacription                                     |
+|:--------|:-----------------------|:------------------|:------------------------------------------------|
+| large       | `number | number[]`    | `12`          | for every breakpoint                            |
+| medium      | `number | number[]`    | `null`        | 1501px - 1800px                                 |
+| desktop     | `number | number[]`    | `null`        | 1201px - 1500px                                 |
+| tablet      | `number | number[]`    | `null`        | 901px - 1200px                                  |
+| small       | `number | number[]`    | `null`        | 601px - 900px                                   |
+| phone       | `number | number[]`    | `null`        | 461px - 600px                                   |
+| tiny        | `number | number[]`    | `null`        | 0px - 460px                                     |
+| breakpoints | `Breakpoint | null`    | `null`        | when you need a custom breakpoint               |
+| classes     | `HTMLClass | null`     | `null`        | read more at [@Prop() classes;](/props/classes) |
 
 > [Breakpoint](#breakpoint) <Badge text="interface" type="error"/> <br/>
 > [HTMLClass](#htmlclass) <Badge text="type" type="warning"/> <br/>

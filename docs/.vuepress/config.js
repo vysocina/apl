@@ -20,6 +20,19 @@ module.exports = {
 					['layout/row', 'Row'],
 					['layout/column', 'Column']
 				]
+			},
+			{
+				title: 'Mixins',
+				children: [
+					['mixins/debug', 'DebugMixin'],
+					['mixins/api', 'ApiMixin']
+				]
+			},
+			{
+				title: 'General Props',
+				children: [
+					['props/classes', 'Classes: HTMLClass']
+				]
 			}
 		]
 	}

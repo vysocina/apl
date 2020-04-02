@@ -85,12 +85,12 @@
 
 ## Props
 
-| Name       | Type                   | Default value | Deacription                                    |
-|:-----------|:-----------------------|:--------------|:-----------------------------------------------|
-| variant    | `Variant`              | `'stack'`     |                                                |
-| vertical   | `Alignment | null`     | `null`        | align children on **x-axis**                   |
-| horizontal | `Alignmen | null`      | `null`        | align children on **y-axis**                   |
-| classes    | `HTMLClass | null`     | `null`        | read more at [@Prop() classes](/core/classes)  |
+| Name       | Type                   | Default value | Deacription                                     |
+|:-----------|:-----------------------|:--------------|:------------------------------------------------|
+| variant    | `Variant`              | `'stack'`     |                                                 |
+| vertical   | `Alignment | null`     | `null`        | align children on **x-axis**                    |
+| horizontal | `Alignmen | null`      | `null`        | align children on **y-axis**                    |
+| classes    | `HTMLClass | null`     | `null`        | read more at [@Prop() classes](/props/classes)  |
 
 > [Variant](#variant) <Badge text="enum" type="tip"/> <br/>
 > [Alignment](#alignment) <Badge text="enum" type="tip"/> <br/>
